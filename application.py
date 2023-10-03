@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO,
 sel = selectors.DefaultSelector()
 
 addr_list = list()
-addr_list.append((socket.gethostbyname(''), 19132))  # 0
+addr_list.append((socket.gethostbyname(''), 19132))                       # 0
 addr_list.append((socket.gethostbyname('dangersky.duckdns.org'), 25592))  # 1
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
